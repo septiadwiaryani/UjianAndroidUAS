@@ -1,0 +1,56 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama" />
+
+    <EditText
+        android:id="@+id/editTextUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNama"
+        android:layout_marginTop="16dp"
+        android:hint="Masukkan Umur"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextProfesi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUmur"
+        android:layout_marginTop="16dp"
+        android:hint="Masukkan Profesi" />
+
+    <EditText
+        android:id="@+id/editTextHobi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProfesi"
+        android:layout_marginTop="16dp"
+        android:hint="Masukkan Hobi" />
+
+    <Button
+        android:id="@+id/buttonProses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextHobi"
+        android:layout_marginTop="16dp"
+        android:text="Proses" />
+
+    <!-- Tempat untuk menampilkan hasil status -->
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonProses"
+        android:layout_marginTop="16dp"
+        android:text="" />
+
+</RelativeLayout>
